@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "server/server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/server/server.js"
+        }
+    ],
+    "env": {
+        "MDB_CONNECTION_STRING": "mongodb+srv://zallowhmncube:MncubeS97.@deploy-vercel.7plcy.mongodb.net/<dbname>?retryWrites=true&w=majority",
+        "EMAIL_USER": "your-email@gmail.com",
+        "EMAIL_PASS": "ybom gxdt irxh bgon",
+        "ADMIN_EMAIL": "zallowhmncube@gmail.com"
+    }
+}
