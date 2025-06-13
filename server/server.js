@@ -10,12 +10,11 @@ const app = express();
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? [
-        'https://your-frontend-domain.vercel.app', // 👈 UPDATE THIS with your actual frontend URL
-        
+        'https://manual-deploy-sabelos-projects-29877586.vercel.app/', // 👈 UPDATE THIS with your actual frontend URL
       ]
     : [
         'http://localhost:3000',    // React default
-        
+        'http://localhost:5173',   // Vite default
         'http://localhost:3001'    // Alternative port
       ],
   credentials: true,
